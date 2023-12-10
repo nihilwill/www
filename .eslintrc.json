@@ -28,7 +28,15 @@
             "style": "kebab-case"
           }
         ]
-      }
+      },
+      "overrides": [
+        {
+          "files": ["cypress/**/*.ts"],
+          "rules": {
+            "@typescript-eslint/no-namespace": "off"
+          }
+        }
+      ]
     },
     {
       "files": ["*.html"],
